@@ -14,12 +14,11 @@ export default async function Home() {
   <Image
     src="/Logo Contorno.svg"
     alt="Logo"
-    width={320}   // más grande
+    width={520}   // más grande
     height={120}
-    className="mb-4"
+    className="-mt-40"
   />
-  <h1 className="text-4xl font-bold">Eventos by La Pelu de María</h1>
-  <p className="mt-2 max-w-xl text-sm sm:text-base">
+  <p className="-mt-20 max-w-xl text-sm sm:text-base">
     Este es tu espacio de inspiración si estás a punto de dar el “sí quiero”.
     Encuentra las últimas tendencias, ideas y consejos de peluquería para novias,
     madrinas y mujeres que deseen brillar en ocasiones especiales. Tu peinado no
