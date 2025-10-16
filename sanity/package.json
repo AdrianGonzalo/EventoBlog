@@ -2,9 +2,9 @@
   "name": "sanity-studio",
   "private": true,
   "scripts": {
-    "dev": "sanity dev",
-    "build": "sanity build",
-    "start": "sanity start"
+    "dev": "npx sanity dev",
+    "build": "npx sanity build",
+    "start": "npx sanity start"
   },
   "dependencies": {
     "@sanity/vision": "^3.0.0",
