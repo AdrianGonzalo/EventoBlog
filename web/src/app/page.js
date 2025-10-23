@@ -39,24 +39,15 @@ export default async function Home() {
           No hay publicaciones principales todavía.
         </p>
       ) : (
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts.map((post) => (
-            <li
-              key={post._id}
-              className="bg-white rounded-lg shadow p-4 flex flex-col"
-            >
-              {post.mainImage && (
-                <Image
-                  src={urlFor(post.mainImage).url()}
-                  alt={post.title}
-                  width={400}
-                  height={250}
-                  className="rounded mb-4 object-cover"
-                />
-              )}
-            </li>
-          ))}
-        </ul>
+        <div className="-mx-8 sm:-mx-20 w-screen">
+          <Image
+            src={urlFor(posts[0].mainImage).url()}
+            alt={posts[0].title}
+            width={1920}
+            height={1080}
+            className="w-full h-auto object-cover"
+          />
+        </div>
       )}
 
       <footer className="mt-12 text-center text-sm text-gray-600">
