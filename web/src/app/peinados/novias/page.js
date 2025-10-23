@@ -50,6 +50,9 @@ export default async function Novias() {
           ))}
         </ul>
       )}
+      <footer className="mt-12 text-center text-sm text-gray-600">
+        © 2025 Eventos by La Pelu de María. Todos los derechos reservados.
+      </footer>
     </div>
   );
 }

@@ -54,8 +54,6 @@ export default async function Home() {
                   className="rounded mb-4 object-cover"
                 />
               )}
-              <h2 className="text-xl font-semibold">{post.title}</h2>
-              <p className="mt-2 text-gray-700">{post.description}</p>
             </li>
           ))}
         </ul>
