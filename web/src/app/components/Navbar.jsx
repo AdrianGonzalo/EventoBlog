@@ -77,15 +77,14 @@ export default function Navbar() {
               }`}
             >
               Peinados
+              <span
+                className={`absolute bottom-5 left-0 w-0 h-[2px] bg-pink-600 transition-all ${
+                  pathname.startsWith("/peinados")
+                    ? "w-full"
+                    : "group-hover:w-full"
+                }`}
+              ></span>
             </span>
-
-            <span
-              className={`absolute -bottom-5 -left-[22px] h-0.5 z-1 bg-pink-600 transition-all ${
-                pathname.startsWith("/peinados")
-                  ? "w-28"
-                  : "w-0 group-hover:w-28"
-              }`}
-            ></span>
 
             <div
               className={`
