@@ -57,21 +57,26 @@ export default function Navbar() {
 
         {/* Botón hamburguesa */}
         <button
-          className="md:hidden text-pink-700"
+          className={`md:hidden text-pink-700 transition-transform duration-300 ${
+            menuOpen ? "rotate-90" : "rotate-0"
+          }`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Menú */}
+        {/* Menú móvil */}
         <div
           className={`${
             isMobile
-              ? `absolute top-full left-0 w-full bg-white flex flex-col items-center gap-4 py-6 text-lg shadow-md border-t border-pink-100 transition-all duration-300 ${
-                  menuOpen
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 -translate-y-5 pointer-events-none"
-                }`
+              ? `absolute top-full left-0 w-full flex flex-col items-center gap-4 py-6 text-lg 
+          bg-white shadow-[0_8px_25px_rgba(0,0,0,0.1)] border-t border-pink-100
+          transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]
+          ${
+            menuOpen
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-6 pointer-events-none"
+          }`
               : "flex gap-8 text-gray-700 font-medium items-center"
           }`}
         >
@@ -79,7 +84,7 @@ export default function Navbar() {
           <Link
             href="/"
             onClick={handleLinkClick}
-            className={`relative group ${
+            className={`relative group text-black ${
               pathname === "/" ? "text-pink-700" : "hover:text-pink-700"
             }`}
           >
@@ -90,7 +95,7 @@ export default function Navbar() {
           {/* Peinados */}
           <div
             ref={dropdownRef}
-            className={`relative group select-none flex flex-col items-center ${
+            className={`relative flex flex-col items-center ${
               isMobile ? "cursor-pointer" : "cursor-default"
             }`}
           >
@@ -103,37 +108,45 @@ export default function Navbar() {
               }`}
             >
               Peinados
+              <span
+                className={`ml-2 inline-block transition-transform duration-300 ${
+                  openDropdown ? "rotate-180" : "rotate-0"
+                }`}
+              >
+                ▼
+              </span>
             </span>
 
-            {/* Dropdown */}
+            {/* Dropdown de Peinados*/}
             <div
-              className={`${
-                isMobile
-                  ? `flex flex-col w-full  mt-2 rounded-lg overflow-hidden transition-all duration-300 ease-out ${
-                      openDropdown
-                        ? "max-h-40 opacity-100 pointer-events-auto"
-                        : "max-h-0 opacity-0 pointer-events-none"
-                    }`
-                  : `absolute left-1/2 -translate-x-1/2 top-8 mt-2 w-36 bg-white border border-pink-100 shadow-md rounded-lg overflow-hidden transform transition-all duration-200 ease-out origin-top ${
-                      openDropdown
-                        ? "scale-100 opacity-100 pointer-events-auto"
-                        : "scale-95 opacity-0 pointer-events-none"
-                    }`
-              }`}
+              className={`flex flex-col w-full mt-2 rounded-xl overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]
+        ${
+          openDropdown
+            ? "max-h-40 opacity-100 translate-y-0"
+            : "max-h-0 opacity-0 -translate-y-2"
+        }
+      `}
             >
               <Link
                 href="/peinados/novias"
                 onClick={handleOptionClick}
-                className="block px-5 py-3 text-black hover:bg-pink-100 hover:text-pink-700 transition-colors text-center"
+                className="flex items-center justify-center gap-2 px-5 py-3 
+          text-gray-800 font-medium text-center 
+          hover:bg-pink-50 hover:text-pink-700 transition-all duration-300"
               >
-                Novias
+                💍 <span>Novias</span>
               </Link>
+
+              <div className="h-[1px] bg-pink-100 mx-4"></div>
+
               <Link
                 href="/peinados/madrinas"
                 onClick={handleOptionClick}
-                className="block px-5 py-3 text-black hover:bg-pink-100 hover:text-pink-700 transition-colors text-center"
+                className="flex items-center justify-center gap-2 px-5 py-3 
+          text-gray-800 font-medium text-center 
+          hover:bg-pink-50 hover:text-pink-700 transition-all duration-300"
               >
-                Madrinas
+                👑 <span>Madrinas</span>
               </Link>
             </div>
           </div>
