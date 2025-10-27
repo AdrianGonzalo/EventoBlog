@@ -35,3 +35,33 @@ body {
 .before\:animate-\[shine_3s_linear_infinite\]::before {
   background-size: 200% auto;
 }
+
+.textura-1 {
+  background-image: url("/web/public/texturas/wall 1.png");
+  background-repeat: repeat;
+  background-color: var(--background);
+}
+
+.textura-2 {
+  background-image: url("/web/public/texturas/wall 2.png");
+  background-repeat: repeat;
+  background-color: var(--background);
+}
+
+.textura-3 {
+  background-image: url("/web/public/texturas/wall 3.png");
+  background-repeat: repeat;
+  background-color: var(--background);
+}
+
+.textura-4 {
+  background-image: url("/web/public/texturas/wall 4.png");
+  background-repeat: repeat;
+  background-color: var(--background);
+}
+
+.textura-5 {
+  background-image: url("/web/public/texturasv2/wall\ 1.png");
+  background-repeat: repeat;
+  background-color: var(--background);
+}
