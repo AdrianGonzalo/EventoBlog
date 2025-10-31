@@ -15,7 +15,7 @@ export default async function Home() {
   const posts = await client.fetch(query);
 
   return (
-    <div className="font-sans min-h-screen p-8 sm:p-20 text-gray-900">
+    <div className="font-sans min-h-screen p-8 sm:p-20 text-gray-900 ">
       <header className="flex flex-col items-center mb-12 text-center">
         <Image
           src="/Logo Contorno.svg"

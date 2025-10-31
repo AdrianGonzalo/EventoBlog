@@ -1,8 +1,8 @@
 export default function TrabajaConNosotros() {
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-800 py-16 px-6">
+    <main className="min-h-screen  text-gray-800 py-16 px-6">
       <section className="max-w-4xl mx-auto space-y-10">
-        <h1 className="text-4xl font-bold text-center text-gray-900">
+        <h1 className="text-4xl font-bold text-center text-pink-700">
           Trabaja con nosotros
         </h1>
 
@@ -13,7 +13,9 @@ export default function TrabajaConNosotros() {
         </p>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Criterios generales</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-pink-700">
+            Criterios generales
+          </h2>
           <ul className="list-disc pl-6 space-y-2">
             <li>Puntualidad y responsabilidad</li>
             <li>Disponibilidad horaria</li>
@@ -24,7 +26,7 @@ export default function TrabajaConNosotros() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-pink-700">
             Criterios específicos (Estilistas / Peluqueros)
           </h2>
           <ul className="list-disc pl-6 space-y-2">
@@ -36,7 +38,7 @@ export default function TrabajaConNosotros() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-pink-700">
             Asistentes técnicos / Ayudantes
           </h2>
           <ul className="list-disc pl-6 space-y-2">
@@ -47,14 +49,14 @@ export default function TrabajaConNosotros() {
           </ul>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 ">
           <p className="text-gray-600">
             Si crees que encajas con nuestro equipo, envíanos tu CV y una breve
             presentación a:
           </p>
           <a
             href="mailto:contacto@tuempresa.com"
-            className="inline-block mt-3 bg-gray-900 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition"
+            className="inline-block mt-3 bg-pink-700 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition"
           >
             Enviar solicitud
           </a>

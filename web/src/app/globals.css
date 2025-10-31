@@ -36,32 +36,19 @@ body {
   background-size: 200% auto;
 }
 
-.textura-1 {
-  background-image: url("/web/public/texturas/wall 1.png");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff7f6;
+  background-image: url("/texturas/wall.png");
   background-repeat: repeat;
-  background-color: var(--background);
+  background-attachment: fixed;
+  background-size: auto;
 }
 
-.textura-2 {
-  background-image: url("/web/public/texturas/wall 2.png");
-  background-repeat: repeat;
-  background-color: var(--background);
-}
-
-.textura-3 {
-  background-image: url("/web/public/texturas/wall 3.png");
-  background-repeat: repeat;
-  background-color: var(--background);
-}
-
-.textura-4 {
-  background-image: url("/web/public/texturas/wall 4.png");
-  background-repeat: repeat;
-  background-color: var(--background);
-}
-
-.textura-5 {
-  background-image: url("/web/public/texturasv2/wall\ 1.png");
-  background-repeat: repeat;
-  background-color: var(--background);
+.sin-textura {
+  background-color: #ffffff !important;
+  background-image: none !important;
 }

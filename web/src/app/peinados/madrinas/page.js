@@ -14,7 +14,7 @@ export default async function Madrinas() {
   const posts = await client.fetch(query);
 
   return (
-    <div className="font-sans min-h-screen p-8 sm:p-20 bg-pink-50 text-gray-900">
+    <div className="font-sans min-h-screen p-8 sm:p-20 text-gray-900">
       <header className="flex flex-col items-center mb-12 text-center">
         <h1 className="text-4xl font-bold text-pink-700 mb-4">
           Peinados para Madrinas
