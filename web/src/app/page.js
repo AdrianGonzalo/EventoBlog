@@ -55,6 +55,27 @@ export default async function Home() {
         </div>
       )}
 
+      {/* Dinamica en grupo */}
+      <section className="max-w-4xl mx-auto my-24 bg-white/90 backdrop-blur-sm border border-pink-100  shadow-md p-10 text-center">
+        <h2 className="text-3xl font-semibold text-pink-700 mb-4">
+          Dinámica de grupo
+        </h2>
+        <p className="max-w-xl mx-auto text-gray-700 mb-8">
+          En <strong>La Pelu de María</strong> valoramos el trabajo en equipo y
+          las buenas conexiones. Por eso hemos preparado una dinámica especial
+          donde el grupo debe colaborar, decidir y superar un reto juntos.
+        </p>
+        <div>
+          <Link
+            href="/dynamic"
+            className="text-pink-500 hover:text-pink-600 font-medium"
+          >
+            Explorar la dinámica →
+          </Link>
+        </div>
+      </section>
+
+      {/* Ejemplos peinados */}
       <section className="max-w-4xl mx-auto my-24 bg-white/90 backdrop-blur-sm border border-pink-100  shadow-md p-10 text-center">
         <h2 className="text-2xl sm:text-3xl font-semibold text-pink-700 mb-6">
           Inspírate con nuestros peinados
