@@ -14,6 +14,8 @@ export default async function Home() {
 
   const posts = await client.fetch(query);
 
+  
+
   return (
     <div className="font-sans min-h-screen p-8 sm:p-20 text-gray-800">
       {/* Header */}
@@ -31,6 +33,15 @@ export default async function Home() {
         <h2 className="text-lg sm:text-xl font-medium text-pink-600 italic -mt-5">
           “Donde cada peinado cuenta una historia”
         </h2>
+
+        {/* Reproductor de audio debajo del logo */}
+        <section className="audio-player my-6 text-center">
+  <audio controls autoPlay className=" sm:w-[400px] mx-auto bg-pink-200 border-2 rounded-3xl border-pink-400 shadow-md hover:shadow-xl transition-shadow duration-300">
+    <source src="/audio/AudioPelu.wav" type="audio/wav" />
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</section>
+
 
         {/* Texto descriptivo integrado */}
         <p className="mt-6 max-w-2xl text-sm sm:text-base text-gray-700 leading-relaxed bg-white/70 backdrop-blur-md p-6 shadow-sm border border-pink-100">
@@ -55,8 +66,8 @@ export default async function Home() {
         </div>
       )}
 
-      {/* Dinamica en grupo */}
-      <section className="max-w-4xl mx-auto my-24 bg-white/90 backdrop-blur-sm border border-pink-100  shadow-md p-10 text-center">
+      {/* Dinámica en grupo */}
+      <section className="max-w-4xl mx-auto my-24 bg-white/90 backdrop-blur-sm border border-pink-100 shadow-md p-10 text-center">
         <h2 className="text-3xl font-semibold text-pink-700 mb-4">
           Dinámica de grupo
         </h2>
@@ -70,13 +81,13 @@ export default async function Home() {
             href="/dynamic"
             className="text-pink-500 hover:text-pink-600 font-medium"
           >
-            Explorar la dinámica →
+            Explorar la dinámica → 
           </Link>
         </div>
       </section>
 
       {/* Ejemplos peinados */}
-      <section className="max-w-4xl mx-auto my-24 bg-white/90 backdrop-blur-sm border border-pink-100  shadow-md p-10 text-center">
+      <section className="max-w-4xl mx-auto my-24 bg-white/90 backdrop-blur-sm border border-pink-100 shadow-md p-10 text-center">
         <h2 className="text-2xl sm:text-3xl font-semibold text-pink-700 mb-6">
           Inspírate con nuestros peinados
         </h2>
@@ -102,7 +113,7 @@ export default async function Home() {
       </section>
 
       {/* Sobre nosotros */}
-      <section className="max-w-4xl mx-auto my-24 bg-white/90 backdrop-blur-sm border border-pink-100  shadow-md p-10 text-center">
+      <section className="max-w-4xl mx-auto my-24 bg-white/90 backdrop-blur-sm border border-pink-100 shadow-md p-10 text-center">
         <h2 className="text-3xl font-semibold text-pink-700 mb-4">Conócenos</h2>
         <p className="max-w-xl mx-auto text-gray-700 mb-8">
           En <strong>La Pelu de María</strong> creemos que cada persona tiene un
@@ -113,12 +124,12 @@ export default async function Home() {
           href="/nosotros"
           className="text-pink-500 hover:text-pink-600 font-medium"
         >
-          Ver más sobre el equipo →
+          Ver más sobre el equipo → 
         </a>
       </section>
 
-      {/*Contacto y redes */}
-      <section className="max-w-4xl mx-auto my-24 bg-white/85 backdrop-blur-md border border-pink-100  shadow-md p-10 text-center">
+      {/* Contacto y redes */}
+      <section className="max-w-4xl mx-auto my-24 bg-white/85 backdrop-blur-md border border-pink-100 shadow-md p-10 text-center">
         <h2 className="text-3xl font-semibold text-pink-700 mb-6">Contacto</h2>
         <p className="text-gray-700 mb-4">
           💇‍♀️ <strong>La Pelu de María</strong>
@@ -160,12 +171,13 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 📜 Footer */}
+      {/* Footer */}
       <footer className="mt-24 text-center text-sm text-gray-600">
         © 2025 Eventos by La Pelu de María. Todos los derechos reservados.
       </footer>
     </div>
   );
 }
+
 
 //Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
