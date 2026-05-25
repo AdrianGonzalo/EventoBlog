@@ -35,7 +35,7 @@ export default function Nosotros() {
   ];
 
   return (
-    <main className="py-16 px-6  min-h-screen">
+    <main className="py-16 px-6 min-h-screen">
       <section className="max-w-4xl mx-auto text-center mb-12">
         <h1 className="text-4xl font-bold text-pink-700 mb-4">
           Nuestro Equipo
@@ -52,7 +52,6 @@ export default function Nosotros() {
             key={member.name}
             className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300"
           >
-            {/* Nombre y rol */}
             <div className="mb-6">
               <h2 className="text-xl font-semibold text-gray-800">
                 {member.name}
@@ -60,7 +59,6 @@ export default function Nosotros() {
               <p className="text-gray-500 text-sm">{member.role}</p>
             </div>
 
-            {/* Áreas y posiciones */}
             <div className="space-y-4">
               {member.areas.map((area) => (
                 <div key={area.name} className={`${area.color} p-4 rounded-lg`}>
@@ -75,6 +73,26 @@ export default function Nosotros() {
             </div>
           </div>
         ))}
+
+        {/* IDENTIDAD CORPORATIVA */}
+        <div className="bg-white rounded-2xl shadow-lg p-6">
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">
+            Identidad corporativa
+          </h2>
+
+          <p className="text-gray-600">
+            La imagen profesional del equipo forma parte de la identidad de
+            <strong> La Pelu de María</strong>. Cuidamos cada detalle para
+            transmitir una imagen coherente, profesional y de confianza en cada
+            servicio.
+          </p>
+
+          <ul className="mt-4 list-disc ml-6 text-gray-600">
+            <li>Pantalón beige</li>
+            <li>Camiseta blanca con logo</li>
+            <li>Americana negra</li>
+          </ul>
+        </div>
       </section>
     </main>
   );
