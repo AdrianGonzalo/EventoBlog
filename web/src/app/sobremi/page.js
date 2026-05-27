@@ -27,13 +27,21 @@ export default function SobreMi() {
 
                 </div>
 
-                <div className="mt-12 text-center">
+                <div className="mt-12 text-center flex flex-col items-center gap-4">
                     <a
                         href="/cv-maria.jpeg"
                         download
                         className="px-6 py-3 bg-pink-200 hover:bg-pink-300 text-gray-800 font-medium rounded-full inline-block"
                     >
                         Descargar CV
+                    </a>
+
+                    <a
+                        href="/carta presentacion maria.jpeg"
+                        download
+                        className="px-6 py-3 bg-pink-200 hover:bg-pink-300 text-gray-800 font-medium rounded-full inline-block"
+                    >
+                        Carta de presentación
                     </a>
                 </div>
 
