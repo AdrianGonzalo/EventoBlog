@@ -80,18 +80,30 @@ export default function Nosotros() {
             Identidad corporativa
           </h2>
 
-          <p className="text-gray-600">
-            La imagen profesional del equipo forma parte de la identidad de
-            <strong> La Pelu de María</strong>. Cuidamos cada detalle para
-            transmitir una imagen coherente, profesional y de confianza en cada
-            servicio.
-          </p>
+          <div className="grid md:grid-cols-2 gap-6 items-center">
+            <div>
+              <p className="text-gray-600">
+                La imagen profesional del equipo forma parte de la identidad de
+                <strong> La Pelu de María</strong>. Cuidamos cada detalle para
+                transmitir una imagen coherente, profesional y de confianza en cada
+                servicio.
+              </p>
 
-          <ul className="mt-4 list-disc ml-6 text-gray-600">
-            <li>Pantalón beige</li>
-            <li>Camiseta blanca con logo</li>
-            <li>Americana negra</li>
-          </ul>
+              <ul className="mt-4 list-disc ml-6 text-gray-600">
+                <li>Pantalón beige</li>
+                <li>Camiseta blanca con logo</li>
+                <li>Americana negra</li>
+              </ul>
+            </div>
+
+            <div>
+              <img
+                src="/identidad corporativa.png"
+                alt="Uniforme corporativo de La Pelu de María"
+                className="w-full rounded-xl shadow-md object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>

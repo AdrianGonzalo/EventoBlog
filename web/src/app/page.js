@@ -14,7 +14,7 @@ export default async function Home() {
 
   const posts = await client.fetch(query);
 
-  
+
 
   return (
     <div className="font-sans min-h-screen p-8 sm:p-20 text-gray-800">
@@ -36,11 +36,11 @@ export default async function Home() {
 
         {/* Reproductor de audio debajo del logo */}
         <section className="audio-player my-6 text-center">
-  <audio controls autoPlay className=" sm:w-[400px] mx-auto bg-pink-200 border-2 rounded-3xl border-pink-400 shadow-md hover:shadow-xl transition-shadow duration-300">
-    <source src="/audio/AudioPelu.wav" type="audio/wav" />
-    Tu navegador no soporta el elemento de audio.
-  </audio>
-</section>
+          <audio controls autoPlay className=" sm:w-[400px] mx-auto bg-pink-200 border-2 rounded-3xl border-pink-400 shadow-md hover:shadow-xl transition-shadow duration-300">
+            <source src="/audio/AudioPelu.wav" type="audio/wav" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </section>
 
 
         {/* Texto descriptivo integrado */}
@@ -81,7 +81,28 @@ export default async function Home() {
             href="/dynamic"
             className="text-pink-500 hover:text-pink-600 font-medium"
           >
-            Explorar la dinámica → 
+            Explorar la dinámica →
+          </Link>
+        </div>
+      </section>
+
+      {/* Aumentar publico masculino */}
+      <section className="max-w-4xl mx-auto my-24 bg-white/90 backdrop-blur-sm border border-pink-100 shadow-md p-10 text-center">
+        <h2 className="text-3xl font-semibold text-pink-700 mb-4">
+          ¿Cómo aumentar la cuota de mercado masculina en una peluquería?
+        </h2>
+
+        <p className="max-w-xl mx-auto text-gray-700 mb-8">
+          En <strong>La Pelu de María</strong> trabajamos estrategias para atraer más clientes masculinos
+          y mejorar su experiencia en el salón.
+        </p>
+
+        <div>
+          <Link
+            href="/publicomasculino"
+            className="text-pink-500 hover:text-pink-600 font-medium"
+          >
+            Ver estrategia →
           </Link>
         </div>
       </section>
@@ -124,7 +145,7 @@ export default async function Home() {
           href="/nosotros"
           className="text-pink-500 hover:text-pink-600 font-medium"
         >
-          Ver más sobre el equipo → 
+          Ver más sobre el equipo →
         </a>
       </section>
 
