@@ -34,7 +34,7 @@ export default function PublicoMasculinoPage() {
                                 <li>Posibilidad de desplazamiento a domicilio o al lugar del evento.</li>
                                 <li>Uso de productos profesionales y tendencias actuales.</li>
                                 <li>Atención cercana y creación de una buena experiencia para el cliente.</li>
-                                <li>Capacidad de generar recomendaciones "boca a boca" y presencia en redes sociales.</li>
+                                <li>Capacidad de generar recomendaciones {"\"boca a boca\""} y presencia en redes sociales.</li>
                             </ul>
                         </div>
 
